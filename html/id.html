@@ -1,13 +1,80 @@
+<head>
+<title>
+Information
+</title>
+</head>
+
+
+<br>
+
 <ul>
+<li>
 기본정보입력
-</ul>
+</li>
+
+<br>
+
 <form action="" method='get'>
- <input type='text' placeholder='필수입력'><br>
- <input type='password' placeholder='필수입력'>
+ID :   <input type='text' name='userID' placeholder='필수입력' required><br>
+PW :  <input type='password' name='userPW' placeholder='필수입력' required><br>
+사번선택 : <input type='NUMBER' name='coID' min="4" max="10" placeholder='필수입력' required>
+<br>
+<button type='submit'>기본정보 제출</button>
 </form>
 
+</ul>
+
+<br>
+
+<ul>
+<li>
 개인정보 입력
+</li>
+
 <form>
- 생년월일: <input type='date'><br>
- 입사일: <input type='date'>
+ 생년월일 : <input type='date'><br>
+ 핸드폰번호 : <input type='tel' name='phone' pattern='[0-9]{3}-[0-9] {4}-[0-9]{4}' placeholder='필수입력' required> <br>
+ [ -를 포함하여 입력 ] <br>
+ 입사일 : <input type='date'> <br>
+ 주 소 :   <input type='text' placeholder='선택사항'><br>
+<button type='submit'>개인정보 제출</button>
 </form>
+</ul>
+
+<br>
+
+
+<ul>
+<li>
+기타사항
+</li>
+
+ 흡연여부: 
+<select>
+	<option value='1'>흡연자</option>
+	<option value='2'>비흡연자</option>
+</select>
+<br>
+부모님 나이대: 
+<br>
+<input type='radio' name='parentsage' value='춤'>40대
+<input type='radio' name='parentsage' value='게임'>50대
+<input type='radio' name='parentsage' value='독서'>60대
+<input type='radio' name='parentsage' value='독서'>70대
+<input type='radio' name='parentsage' value='독서'>80대?
+<br>
+형제 여부 : 
+<br>
+<form action="">
+    <input type="checkbox" name="ubro" value="ubro" > 형
+    <input type="checkbox" name="lbro" value="lbro"> 제
+    <input type="checkbox" name="usis" value="usis"> 자
+    <input type="checkbox" name="lsis" value="lsis"> 매
+    <input type="checkbox" name="nono" value="nono"> 없음
+c
+</form>
+</ul>
+
+
+<br>
+<button type='submit'>최종제출</button>
